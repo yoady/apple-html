@@ -1,0 +1,48 @@
+<!-- 
+4강 : css 파일 만들고 첨부하는 법
+
+css : Cascading(폭포) Style Sheet 스타일 보관파일
+
+1.일단 <link>로 css 파일연결
+
+2.css 파일에 style 작성
+
+3.html 파일에서 작명한거 사용
+
+4.css 파일에 style 보관하고 class 작명 / html파일에선 class="작명"
+
+5. class
+  > 점찍고 작명 / 중복X
+
+6. class 말고 
+  > 태그명
+  > id : #
+
+7. class vs id
+  > class 추천
+
+8. 스타일이 겹칠경우 : 우선순위 *************
+  > style="" : 1000점
+  > id       : 100점
+  > class    : 10점
+  > tag      : 1점
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body>
+        <img src="../image/lion.png" alt="lion" class="profile" />
+        <h3 class="title">Dayeon</h3>
+        <p id="special" class="content">
+            Front-end Developer
+            <br />
+            소개글~~
+        </p>
+    </body>
+</html>

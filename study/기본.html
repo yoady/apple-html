@@ -1,0 +1,65 @@
+<!-- 
+2강 : HTML 기본태그
+
+1.<태그>써야한다.
+2.가끔 속성넣기 가능
+
+----------------------------------
+
+3강 : 기본적인 웹페이지 스타일링
+
+1. HTML >> style 속성으로 꾸밈
+(스타일명:값;)
+
+2. "이미지" 가운데 정렬
+display:block;
+margin-left:auto;
+margin-right:auto;
+<->"text" 가운데 정렬
+text-align:center;
+
+3. 글자 스타일링
+사이즈 > font-size:16px;
+종류 > font-family:'gulim';
+색 > color:red;
+자간 > letter-spacing:1px;
+굵기 > font-weight:100~900 
+/ <strong></strong>
+
+4. <span>
+: 글자를 감쌀수 있는 별 뜻 없는 태그
+
+
+* % 단위 > 부모사이즈에 비례
+
+<p> : paragraph
+<h> : heading
+<ol> : ordered list
+<ul> : unordered list
+<li> : list item
+
+Q. 다 외워야합니까
+A. 필요하면 검색 ㄱㄱ
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <a href="https://www.google.com/"><p>이동하기</p></a>
+
+        <hr />
+        <img src="./image/lion.png" alt="lion" style="width: 100px; display: block; margin-left: auto; margin-right: auto" />
+        <h3 style="text-align: center">Dayeon</h3>
+        <p>
+            <span style="color: red">Front-end</span> Developer
+            <br />
+            소개글~~
+        </p>
+    </body>
+</html>

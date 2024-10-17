@@ -1,0 +1,33 @@
+<!-- 
+6강
+레이아웃 만들기 1 : 호환성 좋은 float
+
+1. 감싸는 container 박스 만들어두면 유용
+  >> 최대 width 같은 걸 미리 지정할때 좋음
+
+2. 박스 가로배치할 때 float 쓰셈
+
+3. float:left;
+  >> 요소를 공중에 띄워서 왼쪽정렬
+
+4. clear:both;
+  >> float 다음에 오는 요소에게 주면 float로 발생하는 이상한 현상 해결가능
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/float.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"></div>
+            <div class="left-menu"></div>
+            <div class="right"></div>
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>

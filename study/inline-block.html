@@ -1,0 +1,38 @@
+<!-- 
+7강
+****귀찮은**** inline-block
+
+1.
+display:block(한 행을 전부 차지)
+display:inline-block(내 크기만큼 차지)
+>>>>>>어울림<<<<<<<
+
+2. 박스사이 공백제거 귀찮음
+
+3. inline-block 사용시 공백제거 방법
+  1)박스사이 주석기호 활용
+  2)부모태그에 font-size:0px;
+
+  (참고) 부모 태그로부터 inherit 되는 스타일은 중요도 가장 낮음
+
+4. inline-block 박스 안에 글쓰면 왜 이럼?
+  >> baseline 때문
+  vertical-align: top; 사용
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/inline-block.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"></div>
+            <div class="left-menu"></div>
+            <div class="right"><p>안녕하세요</p></div>
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>
