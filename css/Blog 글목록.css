@@ -1,0 +1,33 @@
+.container {
+    width: 800px;
+    height: 200px;
+    background: #eee;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-content {
+    width: 80%;
+    height: 200px;
+    background: greenyellow;
+    float: left;
+}
+
+.blog-img {
+    width: 20%;
+    height: 200px;
+    background: gray;
+    float: left;
+}
+
+.blog-profile {
+    width: 50px;
+    float: left;
+}
+
+.blog-name {
+    width: 50px;
+    display: block;
+    float: left;
+}
