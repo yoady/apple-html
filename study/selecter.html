@@ -1,0 +1,99 @@
+<!-- 
+9강
+선택자를 이용해 css 코드 양 줄이기
+
+1. 태그
+  1) <nav></nav>
+  <div> 와 똑같음 / 하지만 <div> 보다 읽기 쉬움
+
+  2) <section></section>
+  섹션을 표현하고 싶을 때
+
+  3) <footer></footer>
+  footer를 표현하고 싶을 때
+
+  4)<a href=""></a>
+  클릭 / 링크없을경우 #
+    text-decoration: none; 
+      >> 밑줄제거가능
+
+  5) 방문 후 보라색되는것도 변경가능 >> head 에 추가
+    <style>    
+      a { text-decoration: none; color: black; }    
+      a:visited { text-decoration: none; }    
+      a:hover { text-decoration: none; }    
+      a:focus { text-decoration: none; }    
+      a:hover, a:active { text-decoration: none; }
+    </style>
+
+2. selecter 문법
+  1) 공백 : ~안에있는 모든자식
+  2) > : ~안에있는 직계자식
+
+
+3. 태그에 class 2개 이상 부여하기
+  ex) <ul class="navbar content">
+
+*****읽기만해도 바로 알 수 있는게 좋은 selecter
+
+-->
+<a href=""></a>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog 글목록</title>
+        <link rel="stylesheet" href="../css/selecter.css" />
+        <style>
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            a:visited {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            a:focus {
+                text-decoration: none;
+            }
+            a:hover,
+            a:active {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">영화</a></li>
+                <li><a href="#">맛집</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">컴퓨터</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="blog-content">
+                <div>
+                    <img src="../image/lion.png" alt="lion" class="blog-profile" />
+                    <div class="blog-name">
+                        <h4 style="margin: 8px">이름</h4>
+                        <p style="margin: 8px">날짜</p>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+                <div style="clear: both">
+                    <h4>블로그글</h4>
+                    <p>가성비 맛집 발견</p>
+                </div>
+            </div>
+            <div class="blog-img">
+                <img src="../image/lion.png" alt="lion" width="100%" class="lion" />
+            </div>
+        </div>
+    </body>
+</html>
