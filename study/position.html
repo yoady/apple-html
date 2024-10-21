@@ -1,0 +1,44 @@
+<!-- 
+11강
+position과 좌표 레이아웃 만들기
+
+1. class명 중복 피하려면 접두어 많이 활용하셈
+
+2. 좌표속성으로 배치
+  > position 부여
+  1) 좌표이동가능
+  2) 공중에 뜸
+
+  - position:relative
+    : 내 원래 위치를 기준으로 이동하세요~
+  - position:absolute
+    : 내 부모 태그 중에 position:relative 가진 부모 기준
+  - position:static
+    : 좌표이동X
+  - position:fixed
+    : 현재 화면이 기준
+  
+  * position:absolute 준 요소 가운데정렬 하려면 
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/position.css" />
+    </head>
+    <body>
+        <div class="main-background">
+            <h4 class="main-title">Buy Our Shoes!</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, natus.</p>
+            <button class="main-button">구매하기</button>
+            <div class="box1"></div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </body>
+</html>
