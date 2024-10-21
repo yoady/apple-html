@@ -1,0 +1,46 @@
+<!-- 
+10강
+배경 이쁘게 넣은 스킬들 & margin collapse
+
+***ctrl + space : 자동완성
+
+1. ../ : 상위폴더로 이동하라는 뜻
+
+2. 배경이미지는 꽉차지않으면 반복됨
+  > background-repeat: no-repeat;
+
+3. background-size
+  1) cover : 배경짤려도 상관없으니 빈공간 없이 배경으로 꽉채워라
+  2) contain : 배경짤리면 안됩니다
+
+4. 배경위치 조정가능
+  > background-position
+
+5. 스크롤시 배경 위치 조정가능
+  > background-attachment 
+
+6. 박스에 보정입히기
+  > filter 
+
+7. 배경 여러개 겹치기
+  > background-image: url(), url()...;
+
+8. margin collapse 현상
+  : 박스 2개가 위쪽 테두리 겹치면 margin 도 합쳐짐
+    >> 싫으면 테두리 안붙게하셈
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/background.css" />
+    </head>
+    <body>
+        <div class="main-background">
+            <h4 class="main-title">Buy Our Shoes!</h4>
+        </div>
+    </body>
+</html>
