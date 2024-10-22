@@ -1,0 +1,60 @@
+<!-- 
+16강
+코드양이 줄어드는 class 작명법(OOCSS,BEM)
+
+[OOCSS (Object Oriented CSS)]
+
+>> 초보의 class 작성방식
+<button class="btn-red">더알아보기</button>
+<button class="btn-blue">구매하기</button>
+
+>> 고수 : 뼈대용 class, 살점용 class 각각 제작
+<button class="main-btn bg-red">더알아보기</button>
+<button class="main-btn bg-blue">구매하기</button>
+
+-뼈대 스타일이 많을수록 이득
+-뼈대 디자인 class / 색깔놀이용 class
+-만들어두면 편한 Utility class
+  : 스타일 한 두개만 들어있는 class
+-장점
+1. CSS양이 줄어듬
+2. 유지보수 편리
+
+
+[BEM (Block__Element--Modifier)]
+: 창의력 딸릴 때
+
+class="덩어리이름__역할--세부특징"
+
+*****
+요즘은.. React, Vue로 HTML 만들게되면
+OOCSS, BEM 굳이 안써도 잘함
+
+React, Vue 쓰면 덩어리(Component) 단위로 HTML 파일 나눠서 코드짬
++ Component에만 사용가능한 CSS 생성가능
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css-기초/OOCSS,BEM.css" />
+    </head>
+    <body>
+        <button class="btn-red">더알아보기</button>
+        <button class="btn-blue">구매하기</button>
+
+        <button class="main-btn bg-red">더알아보기</button>
+        <button class="main-btn bg-blue">구매하기</button>
+
+        <div class="profile">
+            <img src="" alt="" class="profile__img" />
+            <h4 class="profile__title"></h4>
+            <p class="profile__content"></p>
+            <button class="profile__button--red"></button>
+            <button class="profile__button--blu"></button>
+        </div>
+    </body>
+</html>
