@@ -1,0 +1,47 @@
+<!-- 
+HTML CSS 웹폰트 넣는 법과 안티앨리어싱
+-웹폰트 첨부방법
+-용량줄이기
+-호환성잡기
+-트래픽절약
+-폰트 anti-aliasing
+
+1. 폰트넣는 법
+- font-family는 inherit 됩니다
+- 페이지 방문자들의 PC에 굴림체가 설치되어있어야 이용가능 > 여러개 써야 안정적
+
+2. 커스텀 폰트넣는 법
+@font-face {
+    font-family: '작명~~';
+    src: url(../font/NanumSquareR.woff);
+}
+> 내가 준비한 폰트파일을 CSS에서 사용가능하게 등록하는 과정
+
+-한글폰트 사이즈는 너무 큼
+  > 1~2개만 쓰자
+  > 용량 줄이려면 .woff 쓰셈
+
+-font-weight 그냥 주면 안이쁨
+  > 굵은 폰트를 따로 등록해야함
+
+3. 폰트파일 호스팅해주는 Google Fonts
+
+4. 폰트 부드럽게 처리하려면
+  > 회전시켜보셈
+    transform: rotate(0.03deg);
+  > 맥북은 원래 부드럽게 처리함
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css-중급/font.css" />
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, excepturi numquam quae libero ullam aliquam.</p>
+    </body>
+</html>
