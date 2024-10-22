@@ -1,6 +1,45 @@
+@use 'reset';
+
 $메인칼라: #eee;
 
 .box {
     width: 100px;
     background: $메인칼라;
+}
+
+%btn {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.btn-green {
+    @extend %btn;
+    background: green;
+}
+
+.btn-red {
+    @extend %btn;
+    background: red;
+}
+
+.btn-blue {
+    @extend %btn;
+    background: blue;
+}
+
+@mixin 폰트스타일($구멍, $구멍2) {
+    font-size: $구멍;
+    #{$구멍2}: -1px;
+}
+
+h2 {
+    @include 폰트스타일(40px, width);
+    color: reset.$메인칼라;
+}
+h3 {
+    @include 폰트스타일(30px, height);
+}
+h4 {
+    @include 폰트스타일(10px, width);
 }

@@ -9,8 +9,9 @@ Sass 기초
   scss > css 변환해야 사용가능
 -코드는 scss에 짜고 html에 넣을 땐 css 파일 넣고
 -.map 파일의 용도 : 크롬 개발자도구 디버깅용
+-compile 해야 이용가능
 
-#compile : 변환
+#compile : css 변환
 
 -용례
 1. 어려운 단어 기억할때 : 변수문법
@@ -21,8 +22,53 @@ Sass 기초
 3. 사칙연산 바로가능 (+-는 같은 단위끼리, */은 정수)
   (실은 css 기본 문법에도 사칙연산 기능 있음 > calc)
 
+-.scss와 .sass 파일의 차이
+1. .sass파일은 SASS문법 사용가능한데 괄호안써도 됨
+2. 예제코드 복붙할 경우/대부분 scss 픽
+
+-nesting 문법
+.main-bg {
+    h4{
+    }
+    button{
+    }
+  }
+> 관련있는 class들 묶을 때 좋음
+> nesting은 두개이상 중첩 ㄴㄴ
+
+-@extend 문법
+> %임시클래스명
+> class 전체를 복사할 때
+> %임시클래스는 단독으로 컴파일되지 않음
+
+-@mixin 문법
+> 긴 코드를 짧은 단어로 축약할 때
+> @mixin 작명(){} 생성
+> @include 작명() 삽입
+> $파라미터 : 긴 코드를 가변적으로 만들 때
+> 글자중간에 $변수나 $파라미터 넣을 때 
+  #{$변수명}
+> 다른파일의 @mixin 쓰려면 
+  : @include 파일명.mixin이름
+
+
+-다른 파일에 있는 내용 가져오고 싶을 때
+  reset.scss
+  > @use '파일경로';
+  > css 기본 문법에도 @import 있음
+  > reset.scss 파일은 css로 컴파일할 이유없음
+    컴파일하기 싫은 파일은 _파일명.scss로 작명하쇼
+  > 다른파일의 @mixin, $변수 이런것도 가져올 수 있음
+    다른파일의 $변수를 쓰려면 : 파일명.$변수
+
+- function, if, for 이런 것들도 있는데 거의 안씀
+  필요하면 찾아쓰셈
+
+-tip : 초보는 SASS문법부터 쓰려면 어려움
+      > CSS부터 짜고 SASS문법으로 축약해보셈
 
 -->
+
 <!DOCTYPE html
 <html lang="en">
     <head>
@@ -31,5 +77,9 @@ Sass 기초
         <title>Document</title>
         <link rel="stylesheet" href="../css/test.css">
     </head>
-    <body></body>
+    <body>
+      <div class="btn-green"></div>
+      <div class="btn-red"></div>
+      <div class="btn-blue"></div>
+    </body>
 </html>
