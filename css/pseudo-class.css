@@ -1,0 +1,31 @@
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: chocolate;
+}
+
+.btn:focus {
+    background: gray;
+}
+
+.btn:active {
+    background: brown;
+}
+
+.input-test:hover {
+    background: #000;
+}
+
+.custom-link {
+    text-decoration: none;
+}
+
+.custom-link:link {
+    color: aqua;
+}
+
+.custom-link:visited {
+    color: black;
+}
