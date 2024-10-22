@@ -1,0 +1,86 @@
+<!-- 
+13강
+form&input
+> 폼 만들고 싶을 때 사용
+
+1. 
+<form action="">
+  : 작성한 내용이 어떤 서버경로로 전달될지
+<form method="">
+  : 작성한 내용이 어떤 방식으로 서버에 전달될지
+
+2. 
+<input type="">
+-text : 일반 글자 입력할 때
+-password : 패스워드 입력할 때
+-email : 이메일 입력할 때
+-date : 날짜 입력할 때
+-checkbox : 체크박스 소환
+-radio : 라디오박스 소환
+-submit : 전송버튼
+  <button type="submit"><button/> 도 가능
+
+<input value="">
+  : 미리 채워진 값
+
+<input placeholder="">
+  : 배경글자
+
+<input name="">
+  : 인풋이름
+
+3.
+<select>
+  <option><option/>
+<select>
+  : 옵션
+
+4.
+<textarea><textarea/>
+  : 원하는 크기만큼 당겨서 가능
+-rows="" : 초기크기세팅
+
+5. <input> 스타일링
+-일부만 할 경우 > input[속성명=속성값]
+
+**외울 필요X
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/form&input.css" />
+    </head>
+    <body>
+        <div class="main-background">
+            <h4 class="main-title">Buy Our Shoes!</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, natus.</p>
+            <button class="main-button">구매하기</button>
+        </div>
+        <div class="explain-box">
+            <h2>hi</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <br />
+        <br />
+        <div class="explain-box" style="padding: 50px">
+            <h2>hi</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <form action="">
+            <input type="text" class="text-input" />
+            <input type="text" />
+            <select name="" id="">
+                <option value=""></option>
+            </select>
+        </form>
+        <form action="">
+          <textarea><textarea/>
+        </form>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </body>
+</html>
