@@ -1,0 +1,43 @@
+<!-- 
+편리한 Flexbox
+
+float:left
+display:inline-block
+귀찮음
+> display:flex 쓰면 박스 가로배치 쉬워짐
+
+-특징
+1) width:100% > 실제로 100% 아님 > 최대한임
+2) flex 이용시 정렬 : justify-content: ?;
+3) 반응형으로 디자인할 때 유용
+4) width 크면 밑으로 보내고 싶을 때 
+    flex-wrap: wrap;
+5) 상하정렬
+    justify-content: center;
+    align-items: center;
+6) 박스크기를 비율로 설정가능
+    style="flex-grow: 숫자"
+
+-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css-중급/flexbox.css" />
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item" style="flex-grow: 2">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <nav class="nav-container">
+            <div class="nav-item">Logo</div>
+            <div style="flex-grow: 2"></div>
+            <div class="nav-item">products</div>
+            <div class="nav-item">services</div>
+        </nav>
+    </body>
+</html>

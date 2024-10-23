@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    margin: 5px;
+}
+
+.nav-container {
+    display: flex;
+    height: 50px;
+    color: white;
+    align-items: center;
+    background: indianred;
+}
+
+.nav-item {
+    padding: 20px;
+}
