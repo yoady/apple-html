@@ -1,0 +1,91 @@
+<!-- 
+반응형 레이아웃 만들기
+: 화면이 작으면 레이아웃을 변경해주세요~
+
+1. 단위 더 알아보기
+.box {
+  width : 16px; /* 기본 px 단위 */
+  width : 1.5rem; /* html태그 혹은 기본 폰트사이즈의 1.5배 */
+  width : 2em; /* 내 폰트사이즈 혹은 상위요소 폰트사이즈의 2배 */
+  width : 50vw; /* 브라우저(viewport) 화면 폭의 50% */
+  width : 50vh; /* 브라우저(viewport) 화면 높이의 50% */
+}
+
+2. 반응형 웹을 만들 때 head 태그에 들어가야할 내용
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+3. media query 사용하는 법
+@media screen and (max-width : 1200px) { 
+  .box { 
+    font-size : 40px; 
+  } 
+} 
+
+@media screen and (max-width : 768px) { 
+  .box { 
+    font-size : 30px; 
+  } 
+}
+
+-CSS 파일 최하단에 사용
+-"현재 브라우저의 폭이 1200px 이하일 경우에 안에 있는 class를 적용해주세요~"
+-여러개 원하는 만큼 사용가능
+-(참고) 적용은 아니고 class를 밑에 하나 더 추가해준다라고 이해하시는게 정확합니다.
+  그러면 class 안의 font-size 스타일 중복이 발생하는데
+  중복이 발생하면 원래 더 밑에 있는 스타일을 적용해줍니다. 
+
+3. 권장 Breakpoint
+
+-breakpoint : media query 문법 max-width 안에 넣는 브라우저 폭
+-1200px / 992px / 768px / 576px 권장
+-1200px 이하는 태블릿, 768px 이하는 모바일로 디자인 하는게 가장 간편
+
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css-중급/반응형.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <nav class="nav-container">
+            <div class="nav-item">Logo</div>
+            <div style="flex-grow: 2"></div>
+            <div class="nav-item">products</div>
+            <div class="nav-item">services</div>
+        </nav>
+        <div class="main-background">
+            <h4 class="main-title">Buy Our Shoes! Now On Sale</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, natus.</p>
+            <button class="main-button">구매하기</button>
+        </div>
+        <div class="explain-box">
+            <h2>hi</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="layout-container">
+            <div class="layout-item">
+                <h4 class="layout-text">Fast shipping</h4>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="layout-item">
+                <h4 class="layout-text">Good Service</h4>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="layout-item">
+                <h4 class="layout-text">Free Coupons</h4>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="layout-item">
+                <h4 class="layout-text">New Products</h4>
+                <p>Lorem, ipsum.</p>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </body>
+</html>
