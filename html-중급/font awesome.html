@@ -1,0 +1,104 @@
+<!-- 
+Font Awesome 아이콘 넣기
+
+Font Awesome 라이브러리(코딩시간 줄여주는 코드나 자료같은거)
+
+Font Awesome 설치방법
+
+-Font Awesome 5버전
+https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+
+1. Font Awesome 다운받아 첨부하기
+
+<link href="님 작업폴더에 있는 all.min.css 파일 경로" rel="stylesheet">
+
+Font Awesome 홈페이지의 다운로드 메뉴에서 다운받아 압축을 풀면 여러개의 폴더가 나오는데, 
+
+이 중에 CSS, Webfonts 두개의 폴더를 여러분 작업폴더에 복붙하시면 됩니다. 
+
+그 후에 CSS 폴더 내의 all.css 라는 파일을 하나만 head 태그 안에 딱 첨부해주시면 설치 끝입니다. 나머지 잔챙이 CSS 파일은 다 삭제하셔도 됩니다. 
+
+2. Font Awesome CDN으로 첨부하기
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+CSS파일을 호스팅해주는 고마운 사이트들이 있습니다.
+
+이 사이트가 제공하는 all.min.css 파일을 link태그로 첨부하면 직접 다운받지 않고도 동일한 CSS파일을 이용가능합니다. 
+
+구글에 font awesome 5 cdnjs 이런 식으로 검색하면 됩니다. 
+
+장점은 간편하고 빠르다는 것인데
+
+이 사이트가 다운이 되면 CSS 파일도 이용이 불가능해져서 불안정할 수 있습니다.
+
+3. Font Awesome 아이콘 넣기
+
+<i class="fas fa-book"></i>
+
+1. Font Awesome 5버전 홈페이지의 icons 메뉴로 들어가신 후 
+
+2. 마음에 드는 아이콘을 선택한 후
+
+3. 예제 코드를 HTML에 복붙하시면 됩니다. 
+
+사이즈나 색 수정은 글자 수정하는 것과 똑같이 하시면 됩니다
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css-중급/font awesome.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <nav class="nav-container">
+            <div class="nav-item">Logo</div>
+            <div style="flex-grow: 2"></div>
+            <div class="nav-item">products</div>
+            <div class="nav-item">services</div>
+        </nav>
+        <div class="main-background">
+            <h4 class="main-title">Buy Our Shoes! Now On Sale</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, natus.</p>
+            <button class="main-button">구매하기</button>
+        </div>
+        <div class="explain-box">
+            <h2>hi</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="layout-container">
+            <div class="layout-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h4 class="layout-text">Fast shipping</h4>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="layout-item">
+                <h4 class="layout-text">Good Service</h4>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="layout-item">
+                <h4 class="layout-text">Free Coupons</h4>
+                <p>Lorem, ipsum.</p>
+            </div>
+            <div class="layout-item">
+                <h4 class="layout-text">New Products</h4>
+                <p>Lorem, ipsum.</p>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </body>
+</html>
