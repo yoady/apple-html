@@ -1,0 +1,143 @@
+.wrap {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.intro-container {
+    width: 100%;
+    height: 300px;
+    background: gray;
+    display: flex;
+    background: linear-gradient(#9b9bff, #6565f6);
+}
+
+.intro-tit-wrap {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.intro-tit {
+    position: absolute;
+    left: 150px;
+    right: 50px;
+    top: 50px;
+    font-size: 10px;
+    color: white;
+}
+
+.intro-tit__txt1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.intro-btn {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(62, 62, 62);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.intro-img {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.intro-img img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 210px;
+    height: 230px;
+}
+
+.intro2 {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    text-align: center;
+}
+
+.intro2-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.offer {
+    width: 100%;
+    height: 250px;
+    background: #6565f6;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+
+.offer-item-wrap {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.offer-item {
+    float: left;
+    width: 25%;
+}
+
+i {
+    font-size: 20px;
+    color: #6565f6;
+    background: #fff;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .wrap {
+        position: relative;
+    }
+    .intro-tit {
+        position: absolute;
+        left: 40px;
+        right: 50px;
+        top: 40px;
+        font-size: 10px;
+        color: white;
+    }
+    .intro-img img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 160px;
+        height: 180px;
+    }
+    .offer-item {
+        width: 50%;
+    }
+    .offer-item-wrap {
+        max-width: 600px;
+    }
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.main-item-wrap {
+    max-width: 1000px;
+    display: flex;
+}
+
+.main-item {
+    width: 50%;
+}
